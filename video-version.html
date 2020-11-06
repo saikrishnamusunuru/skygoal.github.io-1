@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--====== Title ======-->
+    <title>Sky Goal Innova Technologines PVT LTD || Comming Soon</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png" />
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!--====== OWl carousel ======-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+	<style>
+	body {
+  background-color:#ffffff;
+  text-align: center;
+  color:white;
+  padding-top:0em;
+}
+
+{ color:white; 
+text-decoration: none;}
+	
+	</style>
+	<script>
+	var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+	</script>
+	
+</head>
+
+<body>
+    <!--====== Preloader ======-->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="cssload-container">
+            <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+        </div>
+    </div>
+
+    <div class="page-wrapper project-five video-version">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="page-left-content">
+                        <div class="logo">
+                            <a href="#"><img src="assets/images/logo.png" alt="SkygoalLogo" alt="Image" style="width:170px;height:170px;"></a>
+                        </div>
+						<!-- animation text starts -->
+						<div>
+						<h1 style="color:blue;">
+  <a href="" class="typewrite" style="color:#673AB7;" data-period="2000" data-type='[ "Find Colleges & Universities", "Apply For Scholarships", "Get Internships & Jobs", "E-learning", "Webinars", "One Platform for all your career needs." ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+
+						</div>
+						<!-- animation text ends-->
+                        <div class="title">
+                            <span>Coming Soon</span>
+                            <h1>India's Best Edu-Tech
+                                Platform Is
+                                On its Way</h1>
+                        </div>
+                        <a href="#subscibeModal" class="main-btn" data-toggle="modal">Pre-Register Now </a>
+                        <div class="social-icon hide-large clearfix">
+                            <ul>
+                                <li class="title">Stay In Touch :</li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                    <div class="page-right-content">
+                        <div class="social-icon">
+                            <ul>
+                                <li class="title">Stay In Touch :</li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="counter-box d-flex align-items-center justify-content-center">
+                            <div class="video">
+                                <video autoplay loop muted class="wrapper-video">
+                                    <source src="assets/video.mp4">
+                                    <!-- <source src="assets/video.mp4"> you can add image too but follow the dimentions-->
+                                </video>
+                            </div>
+                            <div class="counter-box-content">
+                                <h1>Launch In</h1>
+                                <div class="countdown" id="countdownThree" data-countdown="2021/1/20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="locations">
+                        <ul>
+                            <li class="locations-title"> <i class="fas fa-map-marker-alt"></i>Location </li>
+                            <li>520011 - Vijayawada</li>
+                            <li>\</li>
+                            <li>Andhra Pradesh, India</li>
+                        </ul>
+                    </div>
+                </div><!--  /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="contacts">
+                        <ul>
+                            <li class="contact-title">Contact <i class="fas fa-user-circle"></i></li>
+                            <li>+91 7658 919293</li>
+                            <li>\</li>
+                            <li>info@skygoalnext.com</li>
+                        </ul>
+                    </div>
+                </div><!--  /.col-lg-6 -->
+            </div><!--  /.row -->
+        </div>
+        <!--====== Modal ======-->
+        <div class="modal fade subscibe-modal" id="subscibeModal" role="dialog">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span>Stay In touch</span>
+                        <h2>We Are Almost <br> Here</h2>
+                        <p>Subscribe to Our Newsletter and We will send you a notification about the launch of our brand
+                            new site.</p>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeH0BGCf5sr_3YIu0Nn7DlZDyHIdi_vLbXnaW7_2ASBhWTT8w/viewform?usp=sf_link">
+                            <input type="email" placeholder="Email Adress*">
+                            <button type="submit">Send</button>
+                        </form>
+                        <a href="3" class="close-modal" data-dismiss="modal"><i class="far fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!--====== Countdown js ======-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!--====== Owl Carousel js ======-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--====== Particles js ======-->
+    <script src="assets/js/particles.min.js"></script>
+    <!--====== Google Maps ======-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ5y0EF8dE6qwc03FcbXHJfXr4vEa7z54"></script>
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+
+</html>
